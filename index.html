@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntiGravity 2.0: Цифровая Магия для Всех | Обучающий Портал</title>
+  <meta name="description" content="Узнайте, как создавать сайты, автоворонки и зарабатывать без знания кода с помощью ИИ-агента AntiGravity 2.0. Интерактивный учебник, квиз, песочница кода и калькулятор запусков.">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="AntiGravity 2.0: Цифровая Магия для Всех">
+  <meta property="og:description" content="Обучающий портал по ИИ-агенту нового поколения. Сценарии для обычных людей, креаторов, пенсионеров и школьников. Запуски без кода с нуля!">
+  <meta property="og:type" content="website">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo" id="logo-btn">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> AntiGravity <span>2.0</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about" class="active">Что это?</a></li>
+          <li><a href="#versus">ИИ-Батл</a></li>
+          <li><a href="#roles">Роли</a></li>
+          <li><a href="#business">Бизнес</a></li>
+          <li><a href="#sandbox">Песочница</a></li>
+          <li><a href="#quiz">Квиз</a></li>
+          <li><a href="#deploy">Деплой</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-tag">Технология, доступная каждому</div>
+      <h1>Цифровая Магия<br>с AntiGravity 2.0</h1>
+      <p>
+        Обучающий портал для тех, кто никогда не веб-кодил и не знает, что это такое. 
+        Узнайте, как создавать сайты, писать сценарии для Reels, автоматизировать рутину 
+        и запускать бизнес по воронке Тимофея Торопова на 100k+ без вложений!
+      </p>
+      
+      <div class="cta-group">
+        <a href="#roles" class="btn btn-primary"><i class="fa-solid fa-play"></i> Начать обучение</a>
+        <a href="#versus" class="btn btn-secondary"><i class="fa-solid fa-bolt"></i> Почему не ChatGPT?</a>
+      </div>
+
+      <!-- Role Selector Component -->
+      <div class="role-selector">
+        <h3>Выберите вашу роль для персонализации программы:</h3>
+        <div class="role-buttons">
+          <button class="role-btn active" onclick="switchRole('creator')">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram Креатор</span>
+          </button>
+          <button class="role-btn" onclick="switchRole('user')">
+            <i class="fa-solid fa-user-gear"></i>
+            <span>Обычный пользователь</span>
+          </button>
+          <button class="role-btn" onclick="switchRole('student')">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Школьник</span>
+          </button>
+          <button class="role-btn" onclick="switchRole('senior')">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Пенсионер</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AntiGravity vs ChatGPT Section -->
+  <section id="versus">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Батл технологий</span>
+        <h2>AntiGravity vs Обычный ChatGPT</h2>
+        <p style="max-width: 600px; margin: 15px auto 0 auto; color: var(--text-muted);">
+          Почему ChatGPT — это просто говорящий робот, а AntiGravity — автономный мастер-строитель, работающий на вашем компьютере?
+        </p>
+      </div>
+
+      <div class="battle-container">
+        <!-- ChatGPT Block -->
+        <div class="battle-card gpt">
+          <h3><i class="fa-solid fa-robot" style="color: #ef4444;"></i> ChatGPT (Простой Чат)</h3>
+          <ul class="battle-list">
+            <li>
+              <strong>Только пишет текст и код на экране</strong>
+              Вам приходится вручную копировать код, создавать файлы на компьютере, разбираться, куда их вставлять.
+            </li>
+            <li>
+              <strong>Беспомощен при ошибках</strong>
+              Если код выдает ошибку, вам нужно копировать её, отправлять обратно в чат и надеяться, что новый вариант заработает.
+            </li>
+            <li>
+              <strong>Требует постоянного контроля</strong>
+              ИИ останавливается после каждого ответа. Вы не можете уйти пить чай, пока он решает комплексную задачу.
+            </li>
+            <li>
+              <strong>Работает в один поток</strong>
+              Не умеет разделять задачи. Всё обсуждение идет строго в одном текстовом окне по очереди.
+            </li>
+          </ul>
+        </div>
+
+        <!-- AntiGravity Block -->
+        <div class="battle-card antigravity">
+          <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--primary);"></i> AntiGravity 2.0 (ИИ-Агент)</h3>
+          <ul class="battle-list">
+            <li>
+              <strong>Сам создает, меняет и запускает файлы</strong>
+              Вам не нужно кодить. ИИ сам создает папки, пишет файлы и открывает готовый сайт прямо у вас на компьютере.
+            </li>
+            <li>
+              <strong>Автономное самоисправление (Self-Healing)</strong>
+              AntiGravity сам запускает созданный код, тестирует его, видит ошибки компиляции или верстки и мгновенно переписывает код до тех пор, пока всё не заработает идеально!
+            </li>
+            <li>
+              <strong>Беспрерывный режим `/goal`</strong>
+              Задайте глобальную цель (например, «Создай Taplink-визитку с квизом») и можете идти отдыхать. ИИ будет непрерывно работать, искать решения в сети и тестировать их, пока не достигнет 100% результата.
+            </li>
+            <li>
+              <strong>Субагенты и фоновые задачи</strong>
+              AntiGravity может запускать «субагентов» — независимых ИИ-помощников в фоновом режиме, которые будут параллельно проводить исследования, не отвлекая вас от чата.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Role-based Tutorials -->
+  <section id="roles">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Обучающий трек</span>
+        <h2>Индивидуальный курс магии</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">Программа подстраивается под выбранный вами профиль.</p>
+      </div>
+
+      <div class="role-info-container">
+        
+        <!-- INSTAGRAM CREATOR TUTORIAL -->
+        <div class="role-block active" id="block-creator">
+          <div class="card" style="margin-bottom: 40px; background: rgba(217, 70, 239, 0.02); border-color: rgba(217, 70, 239, 0.15);">
+            <h3 style="font-family: var(--font-title); font-size: 24px; color: var(--primary); margin-bottom: 15px;">
+              <i class="fa-brands fa-instagram"></i> AntiGravity для Креаторов Instagram
+            </h3>
+            <p style="margin-bottom: 20px;">
+              <strong>Какую боль закрывает:</strong> Постоянный поиск идей, выгорание от рутины контент-мейкинга, слив бюджета на программистов при создании ссылок-визиток Taplink, сложность настройки автоворонок в Директ.
+            </p>
+            <div class="step-container">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Контент-Машина за 1 клик</h4>
+                <p>Попросите AntiGravity: <i>"Создай контент-план на месяц для бьюти-блога по схеме Тимофея Торопова, распиши сюжетные линии прогрева и сценарии для 5 Reels с таймингом и хуками"</i>. ИИ выдаст готовую структуру в виде красивой таблицы.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Сайт-Визитка (Taplink) без кода</h4>
+                <p>Вам больше не нужны конструкторы. Скажите: <i>"Создай мне стильный Taplink в темных тонах с кнопками на Telegram, WhatsApp и кнопкой записи на консультацию"</i>. ИИ напишет и сразу выложит его в ваше живое превью.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Генерация уникального визуала</h4>
+                <p>Прямо в чате используйте команду генерации картинок для фонов ваших сторис или обложек Reels. Управляйте визуальным стилем без сторонних сервисов и подписок.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORDINARY USER TUTORIAL -->
+        <div class="role-block" id="block-user">
+          <div class="card" style="margin-bottom: 40px; background: rgba(6, 182, 212, 0.02); border-color: rgba(6, 182, 212, 0.15);">
+            <h3 style="font-family: var(--font-title); font-size: 24px; color: var(--secondary); margin-bottom: 15px;">
+              <i class="fa-solid fa-user-gear"></i> Бытовая магия для каждого
+            </h3>
+            <p style="margin-bottom: 20px;">
+              <strong>Какую боль закрывает:</strong> Сложные рутинные задачи за компьютером, поиск достоверной информации, составление планов поездок, бытовые финансовые расчеты.
+            </p>
+            <div class="step-container">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Умная организация дел</h4>
+                <p>Напишите: <i>"Сделай мне интерактивный список покупок и планировщик бюджета на отпуск"</i>. AntiGravity создаст удобный локальный HTML-файл с кнопками, чекбоксами и автоподсчетом сумм, которым вы сможете пользоваться прямо в браузере.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Супер-Поиск информации</h4>
+                <p>Используя слэш-команду `/browser`, AntiGravity может детально исследовать сложный вопрос в интернете: найти лучшие авиабилеты, проанализировать отзывы о технике или найти медицинские исследования (используя специальные научные скиллы).</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Автоматизация рутины</h4>
+                <p>ИИ может быстро переименовать сотню фотографий в папке, отсортировать файлы по датам, перевести кучу документов или составить сводный отчет. Достаточно просто попросить его об этом на русском языке.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHOOLKID TUTORIAL -->
+        <div class="role-block" id="block-student">
+          <div class="card" style="margin-bottom: 40px; background: rgba(59, 130, 246, 0.02); border-color: rgba(59, 130, 246, 0.15);">
+            <h3 style="font-family: var(--font-title); font-size: 24px; color: var(--accent); margin-bottom: 15px;">
+              <i class="fa-solid fa-graduation-cap"></i> AntiGravity для Школьников и Студентов
+            </h3>
+            <p style="margin-bottom: 20px;">
+              <strong>Какую боль закрывает:</strong> Скучные домашние задания, непонимание программирования, подготовка к докладам и проектам, создание учебных презентаций.
+            </p>
+            <div class="step-container">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Понятное программирование</h4>
+                <p>Учитель задал написать сайт на информатике, а вы не понимаете HTML? AntiGravity создаст сайт и объяснит каждую строчку простыми словами. Вы сможете менять цвет кнопок в нашей песочнице и сразу понимать, как это устроено.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Интерактивный репетитор</h4>
+                <p>ИИ не просто дает готовое решение задачи, а может разложить её по шагам, нарисовать красивую схему или провести с вами интерактивный опрос (слэш-команда `/grill-me`), чтобы подготовить вас к экзамену.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Сборка крутых школьных проектов</h4>
+                <p>Создайте собственную мини-игру (например, крестики-нолики или викторину) за 5 минут! Расскажите ИИ свою задумку, и он соберет работающее приложение, которое удивит всех одноклассников.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PENSIONER TUTORIAL -->
+        <div class="role-block" id="block-senior">
+          <div class="card" style="margin-bottom: 40px; background: rgba(255, 255, 255, 0.02); border-color: rgba(255, 255, 255, 0.1);">
+            <h3 style="font-family: var(--font-title); font-size: 24px; color: #10b981; margin-bottom: 15px;">
+              <i class="fa-solid fa-mug-hot"></i> Цифровая забота: Руководство для старшего поколения
+            </h3>
+            <p style="margin-bottom: 20px;">
+              <strong>Какую боль закрывает:</strong> Сложность современных компьютеров, страх сделать что-то не так, поиск информации о лекарствах и здоровье, общение с технологиями на «вы».
+            </p>
+            <div class="step-container">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Разговоры на простом языке</h4>
+                <p>Вам больше не нужно учить компьютерные термины. Общайтесь с AntiGravity так, будто это ваш заботливый внук-помощник. Просто скажите: <i>"Найди мне простой рецепт пирога с яблоками и сделай его крупным текстом"</i>.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Поиск и проверка лекарств</h4>
+                <p>Используя безопасные медицинские базы данных (через встроенные скиллы), AntiGravity поможет найти инструкцию к любому лекарству, проверить его побочные эффекты и сравнить аналоги, отсекая рекламный мусор в интернете.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Удобная записная книжка</h4>
+                <p>Попросите ИИ сделать простую форму для записи давления или приема таблеток. Он создаст на вашем экране большую красивую страницу с крупными кнопками, куда будет очень легко вводить данные.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Money Making & PDF Funnel Section -->
+  <section id="business">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Бизнес на AI</span>
+        <h2>Как зарабатывать с AntiGravity 2.0</h2>
+        <p style="max-width: 700px; margin: 15px auto 0 auto; color: var(--text-muted);">
+          Реальная бизнес-модель по схеме системных запусков Тимофея Торопова. 
+          Запустите веб-агентство «под ключ», где вы продаете, а всю работу делает ваш личный ИИ-агент!
+        </p>
+      </div>
+
+      <div class="money-grid">
+        <!-- Funnel steps and explanation -->
+        <div class="card">
+          <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--primary); margin-bottom: 20px;">
+            <i class="fa-solid fa-chart-line"></i> Пошаговая схема запуска ИИ-агентства (9 шагов из PDF)
+          </h3>
+          
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <div class="flow-step-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="flow-step-content">
+                <h4>Шаг 1-2. Определение Метода и Силы</h4>
+                <p>Ваш метод — создание ультра-адаптивных сайтов-визиток и автоворонок за 24 часа. С помощью AntiGravity вы гарантируете клиентам скорость и премиальный дизайн без раздутого бюджета.</p>
+              </div>
+            </div>
+            
+            <div class="flow-step">
+              <div class="flow-step-icon"><i class="fa-solid fa-comments"></i></div>
+              <div class="flow-step-content">
+                <h4>Шаг 3-4. Кастдевы (CustDev) и Исследование</h4>
+                <p>Вы не продаете в лоб. Вы проводите 20 бесплатных зум-диагностик с потенциальными клиентами (креаторы, локальный бизнес), узнаете их боли (сливают деньги на рекламу, нет сайта), и формируете точное предложение.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-step-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="flow-step-content">
+                <h4>Шаг 5. Видео-презентация продукта</h4>
+                <p>Снимаете 30-минутное видео по структуре: ваш кейс ➡️ метод ➡️ из чего состоит работа ➡️ оффер с чеком 50 000 - 150 000 руб. Отправляете клиенту перед личным созвоном.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-step-icon"><i class="fa-solid fa-share-nodes"></i></div>
+              <div class="flow-step-content">
+                <h4>Шаг 6-8. Запуск Прогрева и Продажи</h4>
+                <p>Внедряете 6 этапов прогрева в блоге (от продажи идеи изменений до призыва действовать). Открываете продажи через конвертеры (бесплатные разборы в Директе по ключевому слову). Закрываете 40% лидов на созвоне.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-step-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div class="flow-step-content">
+                <h4>Шаг 9. Реализация проекта с AntiGravity</h4>
+                <p>Клиент оплатил 100 000 руб. Вы открываете чат с AntiGravity, ставите задачу, ИИ создает премиальный сайт, устраняет ошибки (Self-Healing) и вы деплоите его за 1 минуту бесплатно на Vercel. Клиент в восторге, вы забираете 100% чистой прибыли!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Calculator Component -->
+        <div class="card calculator-card">
+          <div class="calc-title">
+            <i class="fa-solid fa-calculator"></i> Калькулятор Декомпозиции
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
+            Введите вашу финансовую цель, чтобы рассчитать воронку продаж по конверсиям Тимофея Торопова (40% из зума в продажу, чек 100k):
+          </p>
+
+          <div class="calc-input-group">
+            <label for="income-goal">Желаемый доход за запуск (руб):</label>
+            <div class="calc-input-row">
+              <input type="range" id="income-goal" class="calc-slider" min="100000" max="2000000" step="50000" value="300000">
+              <input type="text" id="income-val" class="calc-number" value="300 000" readonly>
+            </div>
+          </div>
+
+          <div class="calc-input-group">
+            <label for="avg-check">Средний чек за ваши услуги (руб):</label>
+            <div class="calc-input-row">
+              <input type="range" id="avg-check" class="calc-slider" min="30000" max="300000" step="10000" value="100000">
+              <input type="text" id="check-val" class="calc-number" value="100 000" readonly>
+            </div>
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-result-box highlight">
+              <span>Продажи</span>
+              <strong id="res-sales">3</strong>
+            </div>
+            <div class="calc-result-box">
+              <span>Зум-созвоны</span>
+              <strong id="res-zooms">8</strong>
+            </div>
+            <div class="calc-result-box">
+              <span>Директ-диалоги</span>
+              <strong id="res-chats">32</strong>
+            </div>
+            <div class="calc-result-box">
+              <span>Охват сторис</span>
+              <strong id="res-reach">320</strong>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; font-size: 12px; color: var(--text-muted); text-align: center; border-top: 1px solid var(--border-color); padding-top: 16px;">
+            <i class="fa-solid fa-info-circle"></i> Зарабатывайте головой, делегируя рутину ИИ-агенту!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sandbox Section -->
+  <section id="sandbox">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Живой опыт</span>
+        <h2>Песочница Кода: Управляй Магией</h2>
+        <p style="max-width: 600px; margin: 10px auto 0 auto; color: var(--text-muted);">
+          Попробуйте себя в роли ИИ! Двигайте ползунки ниже: вы увидите, как текстовые команды превращаются в реальный код веб-страницы.
+        </p>
+      </div>
+
+      <div class="sandbox-grid">
+        <!-- Controls -->
+        <div class="sandbox-controls">
+          <h3 style="font-family: var(--font-title); font-size: 18px; margin-bottom: 20px; color: var(--text-bright);">
+            <i class="fa-solid fa-sliders"></i> Параметры элемента
+          </h3>
+          
+          <div class="sandbox-control-group">
+            <label for="sb-text">Текст на кнопке:</label>
+            <select id="sb-text" onchange="updateSandbox()">
+              <option value="Хочу сайт от AntiGravity ⚡">Хочу сайт от AntiGravity ⚡</option>
+              <option value="Запустить ИИ-Агента 🤖">Запустить ИИ-Агента 🤖</option>
+              <option value="Получить диплом Мага 🏆">Получить диплом Мага 🏆</option>
+            </select>
+          </div>
+
+          <div class="sandbox-control-group">
+            <label for="sb-radius">Скругление углов (Border Radius):</label>
+            <input type="range" id="sb-radius" min="0" max="30" value="12" oninput="updateSandbox()">
+          </div>
+
+          <div class="sandbox-control-group">
+            <label for="sb-color">Цвет кнопки (Background Color):</label>
+            <select id="sb-color" onchange="updateSandbox()">
+              <option value="#d946ef">Неоново-розовый (Magenta)</option>
+              <option value="#06b6d4">Электрический бирюзовый (Cyan)</option>
+              <option value="#3b82f6">Космический синий (Blue)</option>
+              <option value="#10b981">Изумрудный зеленый (Green)</option>
+            </select>
+          </div>
+
+          <div class="sandbox-control-group">
+            <label for="sb-padding">Размер кнопки (Padding):</label>
+            <input type="range" id="sb-padding" min="10" max="25" value="16" oninput="updateSandbox()">
+          </div>
+        </div>
+
+        <!-- Preview and Code -->
+        <div class="sandbox-preview-container">
+          <h3 style="font-family: var(--font-title); font-size: 18px; margin-bottom: 20px; color: var(--text-bright);">
+            <i class="fa-solid fa-eye"></i> Результат генерации
+          </h3>
+          
+          <div class="sandbox-preview">
+            <button class="sandbox-element" id="sandbox-btn">Хочу сайт от AntiGravity ⚡</button>
+          </div>
+
+          <div class="sandbox-code" id="sandbox-code-block">
+&lt;button style="background: #d946ef; padding: 16px; border-radius: 12px;"&gt;
+  Хочу сайт от AntiGravity ⚡
+&lt;/button&gt;
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Quiz Section -->
+  <section id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Проверь себя</span>
+        <h2>Квиз: Готовы ли вы стать ИИ-Магом?</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">Пройдите простой тест из 5 вопросов и заберите ваш именной диплом.</p>
+      </div>
+
+      <div class="card quiz-card">
+        <!-- Question screen -->
+        <div id="quiz-question-screen">
+          <div class="quiz-progress" id="quiz-prog-text">Вопрос 1 из 5</div>
+          <div class="quiz-question" id="quiz-q-title">Что такое AntiGravity 2.0?</div>
+          
+          <div class="quiz-options" id="quiz-options-box">
+            <!-- Options dynamically loaded -->
+          </div>
+
+          <button class="btn btn-primary" id="quiz-next-btn" style="display: none;" onclick="nextQuestion()">Далее <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Name Input screen (shown at the end before showing certificate) -->
+        <div id="quiz-name-screen" style="display: none;">
+          <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 15px;">Поздравляем! Вы прошли тест!</h3>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">Введите ваше имя для генерации премиального цифрового диплома:</p>
+          
+          <div style="margin-bottom: 30px;">
+            <input type="text" id="user-name-input" placeholder="Иван Иванов" style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-color); padding: 14px 20px; border-radius: 8px; color: var(--text-bright); font-family: var(--font-title); font-size: 16px; width: 100%; max-width: 350px; text-align: center; outline: none; margin: 0 auto; display: block;">
+          </div>
+
+          <button class="btn btn-primary" onclick="generateCertificate()">Получить диплом <i class="fa-solid fa-certificate"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Web Hosting Deployment Guide -->
+  <section id="deploy" style="border-bottom: none;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Выход в сеть</span>
+        <h2>Как опубликовать ваш сайт бесплатно</h2>
+        <p style="max-width: 600px; margin: 10px auto 0 auto; color: var(--text-muted);">
+          Вы создали свой первый сайт с помощью AntiGravity. Как сделать так, чтобы его мог открыть любой человек в интернете в любой точке мира?
+        </p>
+      </div>
+
+      <div class="battle-container" style="margin-top: 30px;">
+        <!-- Option 1 Vercel -->
+        <div class="card">
+          <h3 style="font-family: var(--font-title); font-size: 20px; color: var(--secondary); margin-bottom: 15px;">
+            <i class="fa-solid fa-rocket"></i> Способ 1. Vercel (Самый простой, 1 минута)
+          </h3>
+          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
+            <li>Перейдите на сайт <a href="https://vercel.com" target="_blank" style="color: var(--secondary); text-decoration: underline;">vercel.com</a> и создайте бесплатный аккаунт.</li>
+            <li>Откройте личный кабинет и перейдите во вкладку <strong>"Add New" ➡️ "Project"</strong>.</li>
+            <li>Просто **перетащите (Drag & Drop)** папку вашего проекта, которую собрал AntiGravity, в специальную область на экране браузера.</li>
+            <li>Через 15 секунд Vercel сгенерирует для вас безопасную ссылку вида <code>https://my-app.vercel.app</code>, которой можно делиться в шапке профиля Instagram!</li>
+          </ol>
+        </div>
+
+        <!-- Option 2 GitHub Pages -->
+        <div class="card">
+          <h3 style="font-family: var(--font-title); font-size: 20px; color: var(--primary); margin-bottom: 15px;">
+            <i class="fa-brands fa-github"></i> Способ 2. GitHub Pages (Для профессионалов)
+          </h3>
+          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
+            <li>Создайте бесплатный аккаунт на <a href="https://github.com" target="_blank" style="color: var(--primary); text-decoration: underline;">github.com</a>.</li>
+            <li>Создайте новый репозиторий (папку для кода), назовите его, например, <code>my-portfolio</code>.</li>
+            <li>Загрузите файлы <code>index.html</code>, <code>style.css</code> и <code>app.js</code> через интерфейс сайта GitHub.</li>
+            <li>Перейдите в настройки репозитория (<strong>Settings</strong>) ➡️ вкладка <strong>Pages</strong> ➡️ выберите ветку <strong>main</strong> и нажмите <strong>Save</strong>. Ваш сайт доступен всему миру!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Display Modal -->
+  <div class="certificate-modal" id="cert-modal">
+    <div class="certificate-card">
+      <div class="cert-badge">
+        <i class="fa-solid fa-award"></i>
+      </div>
+      <h3>ДИПЛОМ МАСТЕРА AI</h3>
+      <div class="subtitle">AntiGravity 2.0 Magic Academy</div>
+      <p style="color: var(--text-muted); font-size: 13px;">Настоящим подтверждается, что</p>
+      
+      <div class="cert-holder" id="cert-user-name">Иван Иванов</div>
+      
+      <p class="desc">
+        успешно прошел интерактивное обучение по работе с субагентами, песочницей кода, 
+        системами автоматической отладки (Self-Healing) ИИ-агента AntiGravity 2.0 и 
+        схемами автоворонок Тимофея Торопова.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 12px;">
+        <button class="btn btn-primary" onclick="closeCertModal()">Отлично!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 AntiGravity 2.0 Educational Academy. Создано с цифровой магией.</p>
+      <p style="margin-top: 8px; font-size: 11px; color: rgba(255,255,255,0.2);">Данный сайт является полностью интерактивным учебным материалом, созданным ИИ-агентом.</p>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

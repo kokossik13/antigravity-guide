@@ -500,30 +500,44 @@
         </p>
       </div>
 
-      <div class="battle-container" style="margin-top: 30px;">
+      <div class="battle-container" style="margin-top: 30px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
         <!-- Option 1 Vercel -->
         <div class="card">
-          <h3 style="font-family: var(--font-title); font-size: 20px; color: var(--secondary); margin-bottom: 15px;">
+          <h3 style="font-family: var(--font-title); font-size: 18px; color: var(--secondary); margin-bottom: 15px;">
             <i class="fa-solid fa-rocket"></i> Способ 1. Vercel (Самый простой, 1 минута)
           </h3>
-          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
+          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
             <li>Перейдите на сайт <a href="https://vercel.com" target="_blank" style="color: var(--secondary); text-decoration: underline;">vercel.com</a> и создайте бесплатный аккаунт.</li>
             <li>Откройте личный кабинет и перейдите во вкладку <strong>"Add New" ➡️ "Project"</strong>.</li>
-            <li>Просто **перетащите (Drag & Drop)** папку вашего проекта, которую собрал AntiGravity, в специальную область на экране браузера.</li>
-            <li>Через 15 секунд Vercel сгенерирует для вас безопасную ссылку вида <code>https://my-app.vercel.app</code>, которой можно делиться в шапке профиля Instagram!</li>
+            <li>Просто <strong>перетащите (Drag & Drop)</strong> папку вашего проекта, которую собрал AntiGravity, в специальную область.</li>
+            <li>Через 15 секунд Vercel сгенерирует для вас безопасную ссылку, которой можно делиться в шапке профиля Instagram!</li>
           </ol>
         </div>
 
-        <!-- Option 2 GitHub Pages -->
+        <!-- Option 2 GitHub Pages (Manual) -->
         <div class="card">
-          <h3 style="font-family: var(--font-title); font-size: 20px; color: var(--primary); margin-bottom: 15px;">
-            <i class="fa-brands fa-github"></i> Способ 2. GitHub Pages (Для профессионалов)
+          <h3 style="font-family: var(--font-title); font-size: 18px; color: #3b82f6; margin-bottom: 15px;">
+            <i class="fa-brands fa-github"></i> Способ 2. GitHub Pages (Ручной)
           </h3>
-          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
-            <li>Создайте бесплатный аккаунт на <a href="https://github.com" target="_blank" style="color: var(--primary); text-decoration: underline;">github.com</a>.</li>
-            <li>Создайте новый репозиторий (папку для кода), назовите его, например, <code>my-portfolio</code>.</li>
-            <li>Загрузите файлы <code>index.html</code>, <code>style.css</code> и <code>app.js</code> через интерфейс сайта GitHub.</li>
-            <li>Перейдите в настройки репозитория (<strong>Settings</strong>) ➡️ вкладка <strong>Pages</strong> ➡️ выберите ветку <strong>main</strong> и нажмите <strong>Save</strong>. Ваш сайт доступен всему миру!</li>
+          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+            <li>Создайте бесплатный аккаунт на <a href="https://github.com" target="_blank" style="color: #3b82f6; text-decoration: underline;">github.com</a>.</li>
+            <li>Создайте новый пустой репозиторий (папку для кода), например, <code>my-portfolio</code>.</li>
+            <li>Загрузите туда файлы <code>index.html</code>, <code>style.css</code> и <code>app.js</code> через интерфейс сайта GitHub.</li>
+            <li>Перейдите в <strong>Settings</strong> ➡️ вкладка <strong>Pages</strong> ➡️ выберите ветку <strong>main/master</strong> и нажмите <strong>Save</strong>.</li>
+          </ol>
+        </div>
+
+        <!-- Option 3 AI Magic Auto-Deploy -->
+        <div class="card" style="border: 1.5px solid var(--primary); background: rgba(217, 70, 239, 0.03); box-shadow: 0 0 25px rgba(217, 70, 239, 0.1);">
+          <div style="position: absolute; top: 12px; right: 12px; background: var(--primary); color: white; font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 20px; font-family: var(--font-title);">МАГИЯ ИИ</div>
+          <h3 style="font-family: var(--font-title); font-size: 18px; color: var(--primary); margin-bottom: 15px;">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Способ 3. Авто-деплой ИИ (API-Токен)
+          </h3>
+          <ol style="margin-left: 20px; color: var(--text-muted); display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+            <li>Вы переходите в настройки GitHub и генерируете токен с правами <strong><code>repo</code></strong>.</li>
+            <li>Просто отправляете токен в чат со словами: <i>"Опубликуй мой сайт сам"</i>.</li>
+            <li><strong>ИИ-агент самостоятельно:</strong> обращается к API GitHub ➡️ создает репозиторий ➡️ настраивает Git ➡️ пушит файлы ➡️ активирует GitHub Pages!</li>
+            <li><strong>Успешный пример:</strong> этот учебник был автоматически развернут ИИ по адресу: <a href="https://kokossik13.github.io/antigravity-guide/" target="_blank" style="color: var(--primary); font-weight: 600; text-decoration: underline;">kokossik13.github.io/antigravity-guide/</a></li>
           </ol>
         </div>
       </div>

@@ -17,6 +17,20 @@
 </head>
 <body>
 
+  <!-- TOP PROMO BAR: Buy Subscription -->
+  <div id="promo-bar" style="background: linear-gradient(135deg, #7c3aed, #d946ef, #06b6d4); padding: 14px 20px; text-align: center; position: sticky; top: 0; z-index: 200; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
+    <span style="color: white; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px;">
+      🚀 <strong>Начни прямо сейчас!</strong> AntiGravity Pro (Gemini 3.1 + Veo + 5TB) на 12 месяцев
+    </span>
+    <span style="background: rgba(0,0,0,0.25); color: #ccc; text-decoration: line-through; font-size: 13px; padding: 4px 10px; border-radius: 20px;">18 999 ₽</span>
+    <span style="background: white; color: #7c3aed; font-weight: 800; font-size: 18px; padding: 4px 14px; border-radius: 20px; font-family: 'Outfit', sans-serif;">699 ₽</span>
+    <a href="https://ggsel.net/catalog/product/antigravity-google-ai-pro-12-mesiacev-gemini-3-1-pro-veo-5tb-liuboi-region-102157232" target="_blank" style="background: white; color: #7c3aed; font-weight: 800; padding: 10px 24px; border-radius: 12px; text-decoration: none; font-family: 'Outfit', sans-serif; font-size: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      ⚡ Купить за 699 ₽
+    </a>
+    <button onclick="document.getElementById('promo-bar').style.display='none'" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 16px; line-height: 1; position: absolute; right: 16px;">×</button>
+  </div>
+
+
   <!-- Header -->
   <header>
     <div class="container header-container">
@@ -25,11 +39,12 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#about" class="active">Что это?</a></li>
+          <li><a href="#about" class="active">Главная</a></li>
+          <li><a href="#buy">🛒 Купить</a></li>
+          <li><a href="#lessons">Уроки</a></li>
           <li><a href="#versus">ИИ-Батл</a></li>
-          <li><a href="#roles">Роли</a></li>
+          <li><a href="#roles">Сценарии</a></li>
           <li><a href="#business">Бизнес</a></li>
-          <li><a href="#sandbox">Песочница</a></li>
           <li><a href="#tgbot">Telegram-бот</a></li>
           <li><a href="#quiz">Квиз</a></li>
           <li><a href="#deploy">Деплой</a></li>
@@ -76,6 +91,239 @@
           </button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- BUY Section -->
+  <section id="buy" style="padding: 60px 0; background: radial-gradient(ellipse at 50% 0%, rgba(124,58,237,0.12) 0%, transparent 70%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: #a78bfa;">Начать работу</span>
+        <h2>Как получить доступ к AntiGravity</h2>
+        <p style="max-width: 660px; margin: 12px auto 0 auto; color: var(--text-muted);">
+          AntiGravity входит в состав <strong style="color: var(--text-main);">Google AI Pro</strong> — подписки, которая даёт доступ к самым мощным моделям Google.
+          Официальная цена — <s style="color:#6b7280;">18 999 руб./год</s>. Купить с максимальной выгодой можно здесь:
+        </p>
+      </div>
+
+      <!-- Price card -->
+      <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+        <div class="card" style="max-width: 560px; width: 100%; border: 2px solid #7c3aed; background: rgba(124,58,237,0.04); text-align: center; position: relative; overflow: visible;">
+          <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg,#7c3aed,#d946ef); color: white; font-family: var(--font-title); font-weight: 700; font-size: 12px; padding: 4px 16px; border-radius: 20px; white-space: nowrap;">
+            ⚡ ЛУЧШАЯ ЦЕНА НА РЫНКЕ
+          </div>
+          <div style="margin-bottom: 6px; color: var(--text-muted); font-size: 13px;">Вместо</div>
+          <div style="font-size: 20px; text-decoration: line-through; color: #6b7280; margin-bottom: 4px;">18 999 ₽ / год</div>
+          <div style="font-family: var(--font-title); font-size: 56px; font-weight: 800; color: white; line-height: 1; margin-bottom: 8px;">
+            699<span style="font-size: 28px; color: #a78bfa;"> ₽</span>
+          </div>
+          <div style="color: var(--text-muted); font-size: 13px; margin-bottom: 24px;">Google AI Pro · 12 месяцев · Любой регион</div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px; text-align: left;">
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">🚀 Gemini 3.1 Pro</div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">💻 AntiGravity 2.0</div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">🎥 Veo 3.1 (видео)</div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">🖼️ Генерация картинок</div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">🎵 Lyria 3 (музыка)</div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 10px 14px; font-size: 13px;">☁️ 5 ТБ Google Drive</div>
+          </div>
+
+          <a href="https://ggsel.net/catalog/product/antigravity-google-ai-pro-12-mesiacev-gemini-3-1-pro-veo-5tb-liuboi-region-102157232"
+             target="_blank"
+             style="display: inline-block; background: linear-gradient(135deg, #7c3aed, #d946ef); color: white; font-family: var(--font-title); font-weight: 700; font-size: 18px; padding: 16px 48px; border-radius: 14px; text-decoration: none; box-shadow: 0 6px 25px rgba(124,58,237,0.4); transition: all 0.3s;"
+             onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(124,58,237,0.5)'"
+             onmouseout="this.style.transform=''; this.style.boxShadow='0 6px 25px rgba(124,58,237,0.4)'">
+            ⚡ Купить за 699 ₽ →
+          </a>
+          <p style="margin-top: 14px; font-size: 11px; color: #4b5563;">Мгновенная автовыдача 24/7 · Оплата СБП без комиссии · Гарантия продавца</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LESSONS Section -->
+  <section id="lessons" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Практический курс</span>
+        <h2>Уроки: Как пользоваться AntiGravity</h2>
+        <p style="max-width: 620px; margin: 12px auto 0 auto; color: var(--text-muted);">
+          Пошаговые объяснения с реальными скриншотами интерфейса. Понятно школьнику, пенсионеру и любому, кто видит AntiGravity впервые.
+        </p>
+      </div>
+
+      <!-- LESSON 1: Interface overview -->
+      <div class="card" style="margin-bottom: 30px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(217,70,239,0.1); border: 1px solid rgba(217,70,239,0.2); border-radius: 20px; padding: 4px 14px; margin-bottom: 16px;">
+              <span style="color: var(--primary); font-weight: 700; font-size: 13px; font-family: var(--font-title);">УРОК 1</span>
+            </div>
+            <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 14px;">Что вижу на экране?</h3>
+            <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7; margin-bottom: 16px;">
+              Когда вы открываете AntiGravity, перед вами три зоны:
+            </p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 13px;">
+              <li style="display: flex; gap: 10px;">
+                <span style="color: var(--primary); font-size: 18px; flex-shrink: 0;">①</span>
+                <div><strong style="color: var(--text-bright);">Левая панель</strong> — здесь находятся ваши <strong>Projects</strong> (папки-проекты), история разговоров <strong>Conversations</strong> и расписание задач <strong>Scheduled Tasks</strong>.</div>
+              </li>
+              <li style="display: flex; gap: 10px;">
+                <span style="color: var(--secondary); font-size: 18px; flex-shrink: 0;">②</span>
+                <div><strong style="color: var(--text-bright);">Центр</strong> — поле для общения с ИИ. Вы пишете здесь свои запросы на русском языке, как обычное сообщение другу.</div>
+              </li>
+              <li style="display: flex; gap: 10px;">
+                <span style="color: var(--accent); font-size: 18px; flex-shrink: 0;">③</span>
+                <div><strong style="color: var(--text-bright);">Вкладки вверху справа</strong> — Overview, Implementation Plan, Walkthrough, Task. Здесь ИИ сохраняет планы и отчёты о своей работе.</div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="assets/screen1_interface.png" alt="Интерфейс AntiGravity — левая панель с проектами, центральный чат и вкладки с артефактами" style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">Реальный скриншот интерфейса AntiGravity 2.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LESSON 2: Projects -->
+      <div class="card" style="margin-bottom: 30px; border-color: rgba(6,182,212,0.2); background: rgba(6,182,212,0.02);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2); border-radius: 20px; padding: 4px 14px; margin-bottom: 16px;">
+              <span style="color: var(--secondary); font-weight: 700; font-size: 13px; font-family: var(--font-title);">УРОК 2 · Главное правило!</span>
+            </div>
+            <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 14px;">Каждое дело — отдельная папка-проект</h3>
+            <div style="background: rgba(6,182,212,0.07); border: 1px solid rgba(6,182,212,0.15); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px;">
+              <strong style="color: var(--secondary);">💡 Золотое правило:</strong>
+              <p style="font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.6;">Прежде чем начать любую новую задачу — создайте для неё отдельный <strong style="color: var(--text-main);">Project</strong>. Иначе ИИ начнёт путать файлы от разных задач, а вы потеряете контекст работы.</p>
+            </div>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 12px;">На скриншоте видны проекты: <code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px;">ДИЗАЙНЕР САЙТОВ</code>, <code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px;">supabase</code>, <code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px;">c</code> — каждый хранит свою историю и рабочую папку отдельно.</p>
+            <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 14px; font-size: 13px; color: var(--text-muted);">
+              <strong style="color: var(--text-bright);">Как создать проект:</strong><br>
+              Нажмите иконку <strong>📁+</strong> рядом с надписью <strong>Projects</strong> в левой панели → введите название → нажмите Enter.
+            </div>
+          </div>
+          <div>
+            <img src="assets/screen1_interface.png" alt="Панель Projects в AntiGravity — отдельные папки для каждого проекта" style="width: 100%; border-radius: 12px; border: 1px solid rgba(6,182,212,0.2); box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">Видно: каждый проект — своя папка с историей и файлами</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LESSON 3: Slash Commands -->
+      <div class="card" style="margin-bottom: 30px; border-color: rgba(250,204,21,0.15); background: rgba(250,204,21,0.01);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(250,204,21,0.1); border: 1px solid rgba(250,204,21,0.2); border-radius: 20px; padding: 4px 14px; margin-bottom: 16px;">
+              <span style="color: #facc15; font-weight: 700; font-size: 13px; font-family: var(--font-title);">УРОК 3 · Суперсилы</span>
+            </div>
+            <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 14px;">Слэш-команды и Скиллы</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">Введите <code style="background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; color: #facc15;">/</code> в поле чата — появится меню специальных команд и скиллов.</p>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px;">
+                <code style="color: #facc15;">/goal</code> <span style="color: var(--text-muted); margin-left: 8px;">— Запустить задачу до полного завершения без остановок. ИИ не спрашивает разрешения, работает сам.</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px;">
+                <code style="color: #facc15;">/schedule</code> <span style="color: var(--text-muted); margin-left: 8px;">— Запланировать задачу на определённое время или сделать повторяющейся.</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px;">
+                <code style="color: #facc15;">/browser</code> <span style="color: var(--text-muted); margin-left: 8px;">— ИИ открывает настоящий браузер, ходит по сайтам и взаимодействует с ними.</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px;">
+                <code style="color: #facc15;">/grill-me</code> <span style="color: var(--text-muted); margin-left: 8px;">— ИИ задаёт вам уточняющие вопросы перед большой задачей, чтобы ничего не упустить.</span>
+              </div>
+              <div style="background: rgba(217,70,239,0.06); border: 1px solid rgba(217,70,239,0.15); border-radius: 8px; padding: 12px 14px;">
+                <strong style="color: var(--primary);">@ Скиллы</strong> <span style="color: var(--text-muted); margin-left: 8px;">— Подключение к специализированным базам данных: PubMed, ClinicalTrials, ChEMBL, AlphaFold и ещё 30+</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="assets/screen2_slash_commands.png" alt="Меню слэш-команд AntiGravity — /goal, /schedule, /browser, /grill-me и научные скиллы" style="width: 100%; border-radius: 12px; border: 1px solid rgba(250,204,21,0.15); box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">Меню команд появляется при вводе / в поле чата</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LESSON 4: Settings -->
+      <div class="card" style="margin-bottom: 30px; border-color: rgba(239,68,68,0.15); background: rgba(239,68,68,0.01);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); border-radius: 20px; padding: 4px 14px; margin-bottom: 16px;">
+              <span style="color: #f87171; font-weight: 700; font-size: 13px; font-family: var(--font-title);">УРОК 4 · Настройки</span>
+            </div>
+            <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 14px;">Режимы безопасности</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">В настройках <strong style="color: var(--text-main);">Settings → Permissions</strong> можно выбрать, насколько свободно ИИ может действовать на вашем компьютере:</p>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px; border-left: 3px solid #6b7280;">
+                <strong style="color: var(--text-bright);">Default</strong> — ИИ спрашивает разрешения перед каждой командой. Хорошо для начинающих.
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px; border-left: 3px solid #3b82f6;">
+                <strong style="color: var(--text-bright);">Full Machine</strong> — может читать и писать любые файлы, но всё равно спрашивает.
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px; border-left: 3px solid #d946ef;">
+                <strong style="color: var(--text-bright);">Unrestricted</strong> — полная свобода, максимальная скорость. ИИ ничего не спрашивает. Для опытных.
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px; border-left: 3px solid #10b981;">
+                <strong style="color: var(--text-bright);">Custom</strong> — настраиваете каждое правило вручную.
+              </div>
+            </div>
+            <div style="margin-top: 14px; background: rgba(6,182,212,0.07); border-radius: 8px; padding: 12px; font-size: 12px; color: var(--text-muted);">
+              💡 <strong style="color: var(--secondary);">Совет новичку:</strong> начните с <strong>Default</strong>. Когда освоитесь и захотите скорости — переключайтесь на <strong>Unrestricted</strong>.
+            </div>
+          </div>
+          <div>
+            <img src="assets/screen3_settings.png" alt="Настройки безопасности AntiGravity — Security Preset: Default, Full Machine, Unrestricted, Custom" style="width: 100%; border-radius: 12px; border: 1px solid rgba(239,68,68,0.15); box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">Settings → Permissions → Security Preset</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LESSON 5: Models -->
+      <div class="card" style="margin-bottom: 30px; border-color: rgba(16,185,129,0.15); background: rgba(16,185,129,0.01);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.2); border-radius: 20px; padding: 4px 14px; margin-bottom: 16px;">
+              <span style="color: #10b981; font-weight: 700; font-size: 13px; font-family: var(--font-title);">УРОК 5 · Выбор мозга</span>
+            </div>
+            <h3 style="font-family: var(--font-title); font-size: 22px; color: var(--text-bright); margin-bottom: 14px;">Какую модель выбрать?</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">Нажмите на название модели в правом нижнем углу чата — появится выпадающий список. Аналогия: выбираете специалиста под конкретную задачу.</p>
+            <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center;">
+                <div><strong style="color: var(--text-bright);">Gemini 3.5 Flash</strong> <span style="color: var(--text-muted);">— быстрые задачи, текст, идеи</span></div>
+                <span style="background: rgba(16,185,129,0.2); color: #10b981; font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;">БЫСТРО</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center;">
+                <div><strong style="color: var(--text-bright);">Gemini 3.1 Pro</strong> <span style="color: var(--text-muted);">— сложный код, большие проекты</span></div>
+                <span style="background: rgba(59,130,246,0.2); color: #3b82f6; font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;">МОЩНО</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center;">
+                <div><strong style="color: var(--text-bright);">Claude Sonnet (Thinking)</strong> <span style="color: var(--text-muted);">— глубокий анализ, логика</span></div>
+                <span style="background: rgba(217,70,239,0.2); color: var(--primary); font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;">ДУМАЕТ</span>
+              </div>
+              <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center;">
+                <div><strong style="color: var(--text-bright);">Claude Opus (Thinking)</strong> <span style="color: var(--text-muted);">— самые сложные задачи</span></div>
+                <span style="background: rgba(251,191,36,0.2); color: #fbbf24; font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;">ПРЕМИУМ</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="assets/screen4_models.png" alt="Список моделей в AntiGravity — Gemini Flash, Pro, Claude Sonnet, Claude Opus, GPT-OSS" style="width: 100%; border-radius: 12px; border: 1px solid rgba(16,185,129,0.15); box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+            <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center;">Выпадающий список моделей в нижней панели чата</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practical homework -->
+      <div class="card" style="text-align: center; border: 1px dashed rgba(255,255,255,0.1); background: rgba(0,0,0,0.15);">
+        <h3 style="font-family: var(--font-title); font-size: 20px; color: var(--text-bright); margin-bottom: 16px;">🎯 Домашнее задание (сделай прямо сейчас)</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 800px; margin: 0 auto; text-align: left;">
+          <div class="step-card"><div class="step-num">1</div><h4>Создай проект</h4><p>Нажми 📁+ в левой панели и создай проект с любым именем, например «Мой первый сайт»</p></div>
+          <div class="step-card"><div class="step-num">2</div><h4>Попробуй /grill-me</h4><p>Введи / и выбери grill-me, затем скажи ИИ о чём хочешь поговорить</p></div>
+          <div class="step-card"><div class="step-num">3</div><h4>Смени модель</h4><p>Нажми на название модели внизу и попробуй переключиться между Gemini Flash и Claude Sonnet</p></div>
+          <div class="step-card"><div class="step-num">4</div><h4>Напиши свой первый запрос</h4><p>«Создай мне список покупок на неделю в виде красивого HTML-файла» и нажми Enter</p></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
